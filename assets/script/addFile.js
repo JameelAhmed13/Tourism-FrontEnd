@@ -391,3 +391,26 @@ $(document).ready(function() {
         x--;
     })
 });
+
+
+// Tourist guide page number of staff
+$(document).ready(function() {
+    var max_fields = 10; //maximum input boxes allowed
+    var wrapper = $(".staff-input-field"); //Fields wrapper
+    var add_button = $(".add-staff-field"); //Add button ID
+
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e) { //on add input button click
+        e.preventDefault();
+        if (x < max_fields) { //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div class="row"><div class="col-lg-3 col-md-6 my-2"> <label for="" class="form-label">Staff Category</label> <input type="text" class="form-control" /> </div> <div class="col-lg-3 col-md-6 my-2"> <label for="" class="form-label">Purpose</label> <input type="text" class="form-control" /> </div>  <div class="col-lg-3 col-md-6 my-2"> <label for="" class="form-label">Qualification</label> <input type="text" class="form-control" /> </div> <div class="col-lg-3 col-md-6 my-2"> <label for="" class="form-label">Experience</label> <input type="text" class="form-control" /> </div>     <a href="#" class="remove_field">Remove</a> </div>'); //add input box
+        }
+    });
+
+    $(wrapper).on("click", ".remove_field", function(e) { //user click on remove text
+        e.preventDefault();
+        $(this).parent('div').remove();
+        x--;
+    })
+});
