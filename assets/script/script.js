@@ -1,5 +1,17 @@
 // Header JS
 
+// $(document).ready(function() {
+//     $('.User-avtar').click(function() {
+//         if ($(".User-Dropdown").hasClass("U-close")) {
+//             $('.User-Dropdown').removeClass("U-close");
+//         } else {
+//             $('.User-Dropdown').addClass("U-close");
+//         }
+//     });
+
+// });
+
+
 $(document).ready(function() {
     $('.navbar-toggler').click(function() {
         $('.navbar-collapse').slideToggle(300);
