@@ -978,12 +978,12 @@
             }
             
             .hero-slider .carousel-cell .inner .subtitle {
-                font-size: 2.2rem;
+                font-size: 3.2rem;
                 line-height: 1.2em;
-                font-weight: 200;
+                font-weight: 600;
                 font-style: italic;
                 letter-spacing: 3px;
-                color: rgba(255, 255, 255, 0.5);
+                color: #ffffff;
                 margin-bottom: 5px;
             }
             
