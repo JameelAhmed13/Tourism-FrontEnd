@@ -1141,7 +1141,7 @@
             .read-more {
                 color: var(--primary-color);
                 float: right;
-                padding: 20px;
+                /* padding: 20px; */
             }
             
             .read-more:hover {
